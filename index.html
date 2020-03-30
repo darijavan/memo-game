@@ -11,7 +11,45 @@
 </head>
 
 <body>
-  <div id="game-board"></div>
+  <div id="menu">
+    <h1 class="title center-text">Memory Game</h1>
+
+    <h3 class="center-text">Choisissez le dos de carte que vous voulez:</h3>
+    <div id="card-choice"></div>
+
+    <h3 class="center-text">Choisissez le nombre de ligne/colonne que vous voulez:</h3>
+    <div id="pattern-choice"></div>
+
+    <div class="center-text" style="margin-top: 20px;">
+      <button id="play" class="btn large">Jouer</button>
+    </div>
+  </div>
+
+  <div id="game-scene" class="hidden">
+    <div>
+      <h1 class="title center-text">Memory Game</h1>
+    </div>
+
+    <div class="container">
+      <div class="sm-9">
+        <div id="status-bar">
+          <div class="center-text">
+            <b>Temps</b><br>
+            <span id="timer">00:00:00</span>
+          </div>
+          <div class="center-text">
+            <b>Nombre de vérifications</b><br>
+            <span id="attempts">0</span>
+          </div>
+        </div>
+        <div id="game-board"></div>
+      </div>
+      <div id="card-founded" class="sm-3 center-text">
+        <b>Cartes trouvées</b>
+        <div id="list"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/index.js"></script>
 </body>
